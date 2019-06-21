@@ -1,0 +1,152 @@
+@import "../../../components/styles/theme";
+
+.layout-main {
+  background-color: #F9FEFF;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  .side-bar {
+    position: fixed;
+    width: 130px;
+    background-color: #023054;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    .brand {
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      font-size: 16px;
+      color: white;
+      font-weight: 500;
+      background: #022d4e;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      overflow-y: auto;
+      height: calc(100vh - 100px);
+
+      /* width */
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: lighten($secondary-color, 10%);
+        border-radius: 10px;
+      }
+
+      li {
+        list-style: none;
+        text-align: center;
+        font-size: 15px;
+        color: darken($white-color, 50%);
+        padding: 40px 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: .3s ease;
+
+        &:hover {
+          padding-left: 15px
+        }
+
+        svg{
+          margin-left: 5px;
+          path{
+          fill:  darken($white-color, 50%);
+          }
+        }
+      }
+
+      li.active {
+        color: $white-color;
+        svg{
+          path{
+            fill:  $white-color;
+          }
+        }
+
+      }
+    }
+  }
+
+  .nav-bar {
+    position: fixed;
+    width: calc(100% - 130px);
+    height: 100px;
+    background-color: $white-color;
+    left: 130px;
+    top: 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+
+    .nav-right {
+      height: 100%;
+      display: flex;
+
+      li {
+        width: unset;
+        display: flex;
+        cursor: pointer;
+        list-style: none;
+        padding: 0 25px;
+        height: 100%;
+        font-family: $secondary-font;
+        align-items: center;
+        color: #999999;
+        border-bottom: 2px solid transparent
+      }
+
+      li.active {
+        color: #36C4CE;
+        border-color: #36C4CE;
+      }
+    }
+
+    .nav-left {
+      height: 100%;
+      align-items: center;
+      font-family: $secondary-font;
+      margin-right: 40px;
+      display: flex;
+      justify-content: flex-end;
+
+      select {
+        width: unset;
+        margin-left: 10px;
+        font-family: $secondary-font;
+        height: 30px;
+        font-size: 16px;
+        color: #6b6b6b;
+        border: none;
+        outline: none
+      }
+    }
+  }
+
+  .content-main {
+    position: fixed;
+    width: calc(100% - 130px);
+    height: calc(100vh - 100px);
+    left: 130px;
+    top: 100px;
+    overflow: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+  }
+
+  .content-main.no-header{
+    top: 0;
+    height: 100vh;
+  }
+}

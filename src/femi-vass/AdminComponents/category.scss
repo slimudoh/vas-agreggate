@@ -1,0 +1,76 @@
+@import "../../components/styles/theme";
+
+.category-container{
+  margin-top: 20px;
+
+  .content-heading{
+    font-weight: 500;
+    font-size: 20px;
+    color: darken($white-color, 30%);
+    margin-bottom: 20px;
+  }
+
+  .add-content{
+    font-weight: 300;
+    font-size: 18px;
+    color: $primary-color;
+    margin-left: 10px;
+  }
+
+  .cat-input{
+    width: 100%;
+    margin-left: 20px;
+    max-width: 530px;
+  }
+
+  .service-item{
+
+    background-color: white;
+    box-shadow: 0 10px 20px rgba($black-color, 0.1);
+    max-width: 400px;
+    .content-box{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      flex-direction: column;
+      color: rgba($secondary-color, 0.6);
+      transition: .3s ease;
+
+      img{
+        width: 100px;
+        height: 100px;
+      }
+
+      svg{
+        width: 60px !important;
+
+        path{
+          fill: rgba($secondary-color, 0.6) ;
+        }
+      }
+
+      h3{
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 20px;
+        text-transform: capitalize;
+      }
+
+    }
+
+    ul{
+      padding: 20px;
+      color: darken($white-color, 50%);
+
+      li{
+        border-bottom: 1px solid darken($white-color, 5%);
+        padding: 10px 0;
+
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

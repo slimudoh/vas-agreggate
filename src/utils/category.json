@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "imageUrl": "./../../container/assets/images/politic-white.svg",
+      "name": "Politics"
+    },
+
+    {
+      "imageUrl": "./../../container/assets/images/politic-white.svg",
+      "name": "Politics"
+    },
+    {
+      "imageUrl": "./../../container/assets/images/politic-white.svg",
+      "name": "Economy"
+    },
+    {
+      "imageUrl": "./../../container/assets/images/politic-white.svg",
+      "name": "Politics"
+    },
+    {
+      "imageUrl": "./../../container/assets/images/politic-white.svg",
+      "name": "Business"
+    },
+    {
+      "imageUrl": "./../../container/assets/images/politic-white.svg",
+      "name": "Tech"
+    },
+    {
+      "imageUrl": "./../../container/assets/images/politic-white.svg",
+      "name": "Foreign"
+    },
+    {
+      "imageUrl": "./../../container/assets/images/politic-white.svg",
+      "name": "Communication"
+    }
+  ]
+}

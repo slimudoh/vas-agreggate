@@ -1,0 +1,33 @@
+@import "../../components/styles/theme";
+
+.react-table{
+  border: none;
+  box-shadow: 0 10px 25px rgba($black-color, 0.05);
+
+  .rt-thead .rt-td, .rt-thead .rt-th, .rt-tbody .rt-td{
+border-right: none !important;
+  }
+
+  .rt-tbody .rt-td{
+    padding: 0 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  .rt-thead .rt-th{
+    padding: 20px 10px;
+    font-weight: 500;
+    color: $primary-color;
+    text-align: left;
+  }
+
+  .rt-tbody .rt-tr-group{
+    border-bottom: none;
+
+
+    &:nth-child(even){
+      background-color: #FBFBFB;
+    }
+  }
+}

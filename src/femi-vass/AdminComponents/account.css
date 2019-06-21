@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+.react-table {
+  border: none;
+  box-shadow: 0 10px 25px rgba(16, 16, 16, 0.05);
+}
+.react-table .rt-thead .rt-td, .react-table .rt-thead .rt-th, .react-table .rt-tbody .rt-td {
+  border-right: none !important;
+}
+.react-table .rt-tbody .rt-td {
+  padding: 0 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.react-table .rt-thead .rt-th {
+  padding: 20px 10px;
+  font-weight: 500;
+  color: #36C4CE;
+  text-align: left;
+}
+.react-table .rt-tbody .rt-tr-group {
+  border-bottom: none;
+}
+.react-table .rt-tbody .rt-tr-group:nth-child(even) {
+  background-color: #FBFBFB;
+}
+
+/*# sourceMappingURL=account.css.map */
